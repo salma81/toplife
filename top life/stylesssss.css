@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+body {
+    background-color: #e7f1f7; 
+    color: #333; } 
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+.container h2{
+    color: black;
+}
+
+.header {
+    background-color: #ef9a33; 
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffe5d9; 
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1575150975321-4907fba2ba53') no-repeat center center/cover; 
+    padding: 100px 20px;
+    color: white;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e57d00; }
+
+.about {
+    background-color: white; 
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+
+.about-text {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+    
+    
+}
+
+.about-text h3 {
+    color: #ff8c00; 
+    margin-top: 20px;
+    
+}
+
+.about-text p {
+    margin-bottom: 15px;
+}
+
+.about-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.services {
+    background-color: #f7fafc; 
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.service-item {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;  
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+}
+
+.service-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.booking {
+    background-color: white;  
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    text-align: center;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.booking-form input, 
+.booking-form select {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    background-color: #ff8c00; 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+.about-text {
+    text-align: right;
+    color: #333; 
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    max-width: 600px;  
+    margin: 0 auto;  
+}
+
+.about-text h3 {
+    color: #ff8c00; 
+    margin-bottom: 10px; 
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6; 
+    margin-bottom: 20px;
+    
+}
+
+.about-text ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.about-text ul li {
+    background-color: #b3ada6; 
+    color: #fff;  
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff8c00; /* لون الزر */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* ظل خفيف للزر */
+    transition: background-color 0.3s ease; /* تأثير الانتقال عند التمرير */
+}
+
+.cta-button:hover {
+    background-color: #e67e00; /* لون عند التمرير */
+}
+.gallery-slider {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.gallery-slider h2 {
+    font-size: 2rem;
+    color: #ff8c00;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* width: 300%; */
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    /* width: 100%; */
+    border-radius: 10px;
+}
+
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+@media (max-width: 768px) {
+    /* تعديل الحاوية */
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    /* تعديل حجم النص */
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    /* تعديل قائمة التنقل لتصبح عمودية */
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    /* تكبير أزرار CTA لتكون واضحة */
+    .cta-button {
+        width: 100%;
+        text-align: center;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+    }
+
+    /* تعديل قسم المعرض */
+    .slider-container {
+        max-width: 100%;
+    }
+
+    .slider {
+        display: block;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* إخفاء أزرار التنقل بين الصور في الموبايل */
+    .prev-slide, .next-slide {
+        display: none;
+    }
+    
+    /* تعديل عرض النموذج في قسم الحجز */
+    .booking-form input, 
+    .booking-form select {
+        width: 95%; /* تعديل العرض لتكون أكبر في الشاشات الصغيرة */
+    }
+
+    /* ضبط العناصر في قسم الخدمات */
+    .service-item {
+        margin: 20px 0;
+        padding: 15px;
+    }
+}
+
+/* ميديا كويري للشاشات الأصغر من 480px */
+@media (max-width: 480px) {
+    .hero {
+        padding: 50px 10px;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    /* تكبير النصوص وتوسيع الأزرار */
+    h1, h2 {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 10px;
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+

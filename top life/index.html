@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مركز توب لايف</title>
+    <link rel="stylesheet" href="stylesssss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>مركز توب لايف</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">عن المركز</a></li>
+                    <li><a href="#services">الخدمات</a></li>
+                    <li><a href="#booking">حجز موعد</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                    <li><a href="#gallery">معرض الصور</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>أفضل خدمات الحجامة والتأهيل</h2>
+            <a href="#services" class="cta-button">استكشف خدماتنا</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>عن المركز</h2>
+            <p>نحن هنا لنقدم لكم أفضل خدمات الحجامة والتأهيل للإصابات والمساج، مع طاقم محترف وأجواء مريحة.</p>
+            <div class="about-content whats">
+                <div class="about-text">
+                    <h3>ماذا نقدم؟</h3>
+                    <p>يعتبر مركز "توب لايف" وجهتك المثالية للعلاج والتأهيل. نستخدم تقنيات حديثة وفعالة لضمان راحتك وصحتك.</p>
+                    
+                    <h3>خدماتنا المميزة:</h3>
+                    <ul>
+                        <li>الحجامة</li>
+                        <li>التأهيل للإصابات</li>
+                        <li>المساج العلاجي</li>
+                    </ul>
+                    
+                    <a href="#contact" class="cta-button">تواصل معنا</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>خدماتنا</h2>
+            <div class="service-item">
+                <h3>الحجامة</h3>
+                <p>تعتبر الحجامة من أقدم طرق العلاج التي تستخدم لتخفيف الألم وتحسين الدورة الدموية.</p>
+            </div>
+            <div class="service-item">
+                <h3>التأهيل للإصابات</h3>
+                <p>نقدم برامج تأهيل متكاملة لمساعدتك في التعافي من الإصابات.</p>
+            </div>
+            <div class="service-item">
+                <h3>المساج العلاجي</h3>
+                <p>استمتع بجلسات المساج المريحة التي تساعدك في الاسترخاء وتخفيف التوتر.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>حجز موعد</h2>
+            <form action="submit-form.php" method="POST" class="booking-form">
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                
+
+                <label for="date">تاريخ الموعد:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">الوقت:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit" class="cta-button">احجز الآن</button>
+            </form>
+        </div>
+    </section>
+    <section id="gallery" class="gallery-slider">
+        <h2>معرض الصور</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="361921524_283555554257995_7508795137233642430_n.jpg" alt="Image 1" width="500px" height="200px"></div>
+                <div class="slide"><img src="369556310_302248332388717_2691684284282471420_n.jpg" alt="Image 2" width="500px" height="200px" ></div>
+                <div class="slide"><img src="377819774_313665057913711_1195662842582276944_n.jpg" alt="Image 3" width="500px" height="200px"></div>
+                <div class="slide"><img src="419257115_380393204574229_3715953979120399805_n.jpg" alt="Image 3" width="500px" height="200px"></div>
+                <div class="slide"><img src="424581694_390536800226536_6454961057431384275_n.jpg" alt="Image 3" width="500px" height="200px"></div>
+                <div class="slide"><img src="424638464_390536816893201_441964419767773673_n.jpg" alt="Image 3" width="500px" height="200px"></div>
+                <div class="slide"><img src="444202821_459640249982857_4203199627226933267_n.jpg" alt="Image 3" width="500px" height="200px"></div>
+                <div class="slide"><img src="458666430_523664400247108_7549270379745613942_n.jpg" alt="Image 3" width="500px" height="200px"></div>
+                <div class="slide"><img src="458943365_523772373569644_354159585790101129_n.jpg" alt="Image 3" width="500px" height="200px"></div>
+                <div class="slide"><img src="460627935_531337549479793_2081861089799637457_n.jpg" alt="Image 3" width="500px" height="200px"></div>
+            </div>
+            <button class="prev-slide" onclick="moveSlide(-1)">❮</button>
+            <button class="next-slide" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+    
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <h2>تواصل معنا</h2>
+            <p>للاستفسار، اتصل بنا على الرقم: <strong>01008525365</strong></p>
+            <a href="https://wa.me/01008525365" class="cta-button">تواصل عبر واتساب</a>
+        </div>
+    </footer>
+    <script src="top.js"></script>
+   
+    
+</body>
+
+</html>
+
+
